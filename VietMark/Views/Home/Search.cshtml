@@ -1,0 +1,163 @@
+﻿@model PagedList.IPagedList<VietMark.Models.SanPham>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-xl-3 col-lg-4 d-none d-lg-block">
+            <div class="vertical-menu mb-all-30">
+                <nav>
+                    <ul style="display: none" class="vertical-menu-list">
+                        <li>
+                            <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "tat-ca-san-pham", cat_id = 0})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Tất cả sản phẩm</a>
+                        </li>
+                        <li class="">
+                            <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "san-pham-nam", cat_id = 1})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Đồ nam<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            <ul class="ht-dropdown mega-child">
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "phu-kien-nam", cat_id = 4})">Phụ kiện</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "phu-kien-nam", cat_id = 1})">Quần/Áo</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "giay-dep-nam", cat_id = 6})">Giày/Dép</a>
+                                </li>
+                            </ul>
+                            <!-- category submenu end-->
+                        </li>
+                        <li class="">
+                            <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "san-pham-nu", cat_id = 2})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Đồ nữ<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+
+                            <ul class="ht-dropdown mega-child">
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "phu-kien-nu", cat_id = 5})">Phụ kiện</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "phu-kien-nu", cat_id = 2})">Quần/Áo</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "giay-dep-nu", cat_id = 7})">Giày/Dép</a>
+                                </li>
+                            </ul>
+                            <!-- category submenu end-->
+                        </li>
+                        <li class="">
+                            <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "san-pham-tre-em", cat_id = 3})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Đồ trẻ em<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+
+                            <ul class="ht-dropdown mega-child">
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "quan-ao-tre-em", cat_id = 3})">Quần/Áo</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "giay-dep-tre-em", cat_id = 8})">Giày/Dép</a>
+                                </li>
+                            </ul>
+                            <!-- category submenu end-->
+                        </li>
+                        <!-- More Categoies Start -->
+                        <li id="cate-toggle" class="category-menu v-cat-menu">
+                            <ul>
+                                <li class="has-sub">
+                                    <a href="#">Xem thêm</a>
+                                    <ul class="category-sub">
+                                        <li><a href="#"><span><img src="~/Content/img/vertical-menu/11.png" alt="menu-icon"></span>Sản phẩm bán chạy</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- More Categoies End -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb Start -->
+<!--<div class="breadcrumb-area mt-30">
+    <div class="container">
+        <div class="breadcrumb">
+            <ul class="d-flex align-items-center">
+                <li><a href="@Url.Action("Index", "Home")">Trang Chủ</a></li>
+                <li class="active"><a href="#">@ViewBag.Cat_Name</a></li>
+            </ul>
+        </div>
+    </div>-->
+    <!-- Container End -->
+<!--</div>-->
+<!-- Breadcrumb End -->
+<!-- Shop Page Start -->
+<div class="main-shop-page pt-100 pb-100 ptb-sm-60">
+    <div class="container">
+        <!-- Row End -->
+        <div class="row">
+            <!-- Product Categorie List Start -->
+            <div class="col-lg-12 order-1 order-lg-2">
+                <div class="main-categorie mb-all-40">
+                    <!-- Grid & List Main Area End -->
+                    <div class="tab-content fix">
+                        <div id="grid-view" class="tab-pane fade show active">
+                            <div class="row">
+                                @foreach (var item in Model)
+                                {
+                                    var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+                                    var giaTien = (item.GiaBanBanDau * (100 - item.PhanTramGiamGia)) / 100;
+                                    <!-- Single Product Start -->
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                                        <div class="single-product">
+                                            <!-- Product Image Start -->
+                                            <div class="pro-img">
+                                                <a href="@Url.Action("Details", "SanPham", new {maSP = item.Id_SanPham})">
+                                                    <img class="primary-img" src="@item.Image" alt="single-product">
+                                                    <img class="secondary-img" src="@item.Image" alt="single-product">
+                                                </a>
+                                                <a href="#" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                            </div>
+                                            <!-- Product Image End -->
+                                            <!-- Product Content Start -->
+                                            <div class="pro-content">
+                                                <div class="pro-info">
+                                                    <h4><a href="product.html">@item.TenSP</a></h4>
+                                                    <p><span class="price">@String.Format(info, "{0:c0}", giaTien)</span><del class="prev-price">@String.Format(info, "{0:c0}", item.GiaBanBanDau)</del></p>
+                                                    <div class="label-product l_sale">@item.PhanTramGiamGia<span class="symbol-percent">%</span></div>
+                                                </div>
+                                                <div class="pro-actions">
+                                                    <div class="actions-primary">
+                                                        <a href="@Url.Action("AddToCart", "ShoppingCart", new{masp = item.Id_SanPham})" title="Thêm vào giỏ hàng"> + Thêm vào</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Product Content End -->
+                                        </div>
+                                    </div>
+                                    <!-- Single Product End -->
+
+                                }
+
+
+
+                            </div>
+                            <!-- Row End -->
+                        </div>
+                        <!-- #grid view End -->
+                        <!-- #list view End -->
+                        <div class="pro-pagination">
+                            <ul class="blog-pagination">
+                                @Html.PagedListPager(Model, page => Url.Action("list_product_by_cat_id", new { cat_id = ViewBag.cat_id, page }))
+                            </ul>
+                        </div>
+                        <!-- Product Pagination Info -->
+                    </div>
+                    <!-- Grid & List Main Area End -->
+                </div>
+            </div>
+            <!-- product Categorie List End -->
+        </div>
+        <!-- Row End -->
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Shop Page End -->

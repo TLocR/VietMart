@@ -1,0 +1,11 @@
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\Common\bin\Debug\Common.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\Common\bin\Debug\Common.pdb
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\Common\obj\Debug\Common.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\Common\obj\Debug\Common.pdb
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\Common\bin\Debug\PagedList.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\Common\bin\Debug\PagedList.Mvc.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\Common\bin\Debug\PagedList.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\Common\bin\Debug\PagedList.Mvc.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\Common\obj\Debug\Common.csproj.CopyComplete

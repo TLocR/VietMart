@@ -1,0 +1,27 @@
+﻿@model VietMark.Models.KhachHang
+@{
+    ViewBag.Title = "Info";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div style="margin: 40px 50px; " class="row">
+        <h2>Thông tin khách hàng</h2>
+    </div>
+    <div style="margin-left: 60px" class="row">
+        <form id="info_user" action="@Url.Action("UpdateInfo", "Manage", new {area = ""})" method="POST">
+            <label for="display-name">Họ và tên </label><br />
+            <input type="text" name="tenKh" id="display-name" value="@Model.TenKh"><br /><br />
+            <label for="username">Tên đăng nhập</label><br />
+            <input type="text" name="username" id="username" placeholder="admin" readonly="readonly" value="@Model.AspNetUser.UserName"><br /><br />
+            <label for="email">Email</label><br />
+            <input type="email" name="email" id="email" readonly="readonly" value="@Model.AspNetUser.Email"><br /><br />
+            <label for="tel">Số điện thoại</label><br />
+            <input type="tel" name="sdt" id="tel" value="@Model.SDT"><br /><br />
+            <label for="address">Địa chỉ</label><br />
+            <textarea name="diaChi" id="address">@Model.DiaChi</textarea><br /><br />
+            <button type="submit" name="btn-update" id="btn-submit">Cập nhật</button><br />
+        </form>
+    </div>
+</div>
+
+

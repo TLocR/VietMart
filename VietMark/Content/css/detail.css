@@ -1,0 +1,125 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+    nav a {
+        color: #fff;
+        margin-left: 10px;
+        text-decoration: none;
+    }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 150%;
+}
+
+.product-image {
+    flex-basis: 40%;
+}
+
+    .product-image img {
+        max-width: 100%;
+        height: auto;
+        border: 3px solid #000000;
+    }
+
+.product-info {
+    /*flex-basis: 70%;
+    padding-left: 50px;*/
+    flex-basis: 72%;
+    padding-left: 10%;
+    
+}
+
+    .product-info h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .product-info p {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        
+    }
+
+    .product-info h4 {
+        margin-bottom: 25px;
+    }
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: inline;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+input[type="number"] {
+    width: 50px;
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+    input[type="submit"]:hover {
+        background-color: #555;
+    }
+
+
+#title {
+    border-radius: 25px;
+    border: 3px solid #0000FF;
+    text-align: center;
+    padding: 6px;
+    width: 400px;
+    height: 50px;
+
+}
+
+.tieude {
+
+    border-radius: 30px;
+    border: 3px solid #000000;
+    text-align: left;
+    padding: 10px;
+    width: fit-content;
+    height: 50px;
+    background-color: #FFD43B;
+
+}
+
+.p {
+    line-height: 100px;
+}
+
+

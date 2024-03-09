@@ -1,0 +1,100 @@
+﻿@model IEnumerable<VietMark.Models.DonDatHang>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_OwnerStoreLayout.cshtml";
+    var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+}
+
+<h2>Danh sách đơn hàng</h2>
+<div class="row">
+    <div class="col-md-12">
+        <div class="tile">
+            <div class="tile-body">
+                @*<div class="row element-button">
+                    <div class="col-sm-2">
+                        <p class="btn btn-add btn-sm">
+                            <i class="fas fa-plus"></i>
+                            @Html.ActionLink("Create New", "Create")
+                        </p>
+                    </div>
+                    <div class="col-sm-2">
+                        <a class="btn btn-delete btn-sm nhap-tu-file" type="button" title="Nhập" onclick="myFunction(this)">
+                            <i class="fas fa-file-upload"></i> Tải từ file
+                        </a>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <a class="btn btn-delete btn-sm print-file" type="button" title="In" onclick="myApp.printTable()">
+                            <i class="fas fa-print"></i> In dữ liệu
+                        </a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a class="btn btn-delete btn-sm print-file js-textareacopybtn" type="button" title="Sao chép">
+                            <i class="fas fa-copy"></i> Sao chép
+                        </a>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <a class="btn btn-excel btn-sm" href="" title="In"><i class="fas fa-file-excel"></i> Xuất Excel</a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a class="btn btn-delete btn-sm pdf-file" type="button" title="In" onclick="myFunction(this)">
+                            <i class="fas fa-file-pdf"></i> Xuất PDF
+                        </a>
+                    </div>
+                </div>*@
+                <table class="table table-hover table-bordered" id="sampleTable">
+                    <thead>
+                        <tr>
+                            <th width="10"><input type="checkbox" id="all"></th>
+                            <th>Tên khách hàng</th>
+                            <th>Ngày đặt hàng</th>
+                            <th>Ngày giao hàng</th>
+                            <th>Địa chỉ giao hàng</th>
+                            <th>Phí giao hàng</th>
+                            <th>Ngày thanh toán</th>
+                            <th>Tình trạng đơn hàng</th>
+                            <th>Chức năng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td width="10"><input type="checkbox" name="check1" value="1"></td>
+                                <td>@Html.DisplayFor(modelItem => item.KhachHang.TenKh)</td>
+                                <td>@Html.DisplayFor(modelItem => item.NgayDatHang)</td>
+                                <td>@Html.DisplayFor(modelItem => item.NgayGiaoHang)</td>
+                                <td>@Html.DisplayFor(modelItem => item.DiaChiGiaoHang)</td>
+                                <td>@String.Format(info, "{0:c0}", item.PhiGiaoHang)</td>
+                                <td>@Html.DisplayFor(modelItem => item.NgayThanhToan)</td>
+                                <td>@Html.DisplayFor(modelItem => item.TinhTrangDonDatHang)</td>
+
+                                <td>
+                                    <button class="btn btn-primary btn-sm trash" type="button" title="Xóa">
+                                        <i class="fas fa-trash-alt">@Html.ActionLink("Delete", "Delete", new { id = item.Id_DonDatHang })</i>
+
+                                    </button>
+                                   @* <button class="btn btn-primary btn-sm edit" type="button" title="Sửa" id="show-emp" data-toggle="modal"
+                                            data-target="#ModalUP">
+                                        <i class="fas fa-edit">@Html.ActionLink("Edit", "Edit", new { id = item.Id_DonDatHang })</i>
+                                    </button>*@
+                                    <button class="btn btn-primary btn-sm edit" type="button" title="Sửa" id="show-emp" data-toggle="modal"
+                                            data-target="#ModalUP">
+                                        <i class="fas fa-edit">@Html.ActionLink("Details", "Details", new { id = item.Id_DonDatHang })</i>
+                                    </button>
+
+                                </td>
+                            </tr>
+
+                        }
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

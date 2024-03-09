@@ -1,0 +1,308 @@
+﻿@model VietMark.Models.SanPham
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+    var giaTien = (@Model.GiaBanBanDau * (100 - @Model.PhanTramGiamGia)) / 100;
+}
+<div class="container">
+    <div class="row">
+        <div class="col-xl-3 col-lg-4 d-none d-lg-block">
+            <div class="vertical-menu mb-all-30">
+                <nav>
+                    <ul style="display: none" class="vertical-menu-list">
+                        <li>
+                            <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "tat-ca-san-pham", cat_id = 0})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Tất cả sản phẩm</a>
+                        </li>
+                        <li class="">
+                            <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "san-pham-nam", cat_id = 1})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Đồ nam<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            <ul class="ht-dropdown mega-child">
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "phu-kien-nam", cat_id = 4})">Phụ kiện</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "phu-kien-nam", cat_id = 1})">Quần/Áo</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "giay-dep-nam", cat_id = 6})">Giày/Dép</a>
+                                </li>
+                            </ul>
+                            <!-- category submenu end-->
+                        </li>
+                        <li class="">
+                            <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "san-pham-nu", cat_id = 2})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Đồ nữ<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+
+                            <ul class="ht-dropdown mega-child">
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "phu-kien-nu", cat_id = 5})">Phụ kiện</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "phu-kien-nu", cat_id = 2})">Quần/Áo</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "giay-dep-nu", cat_id = 7})">Giày/Dép</a>
+                                </li>
+                            </ul>
+                            <!-- category submenu end-->
+                        </li>
+                        <li class="">
+                            <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "san-pham-tre-em", cat_id = 3})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Đồ trẻ em<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+
+                            <ul class="ht-dropdown mega-child">
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "quan-ao-tre-em", cat_id = 3})">Quần/Áo</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "giay-dep-tre-em", cat_id = 8})">Giày/Dép</a>
+                                </li>
+                            </ul>
+                            <!-- category submenu end-->
+                        </li>
+                        <!-- More Categoies Start -->
+                        <li id="cate-toggle" class="category-menu v-cat-menu">
+                            <ul>
+                                <li class="has-sub">
+                                    <a href="#">Xem thêm</a>
+                                    <ul class="category-sub">
+                                        <li><a href="#"><span><img src="~/Content/img/vertical-menu/11.png" alt="menu-icon"></span>Sản phẩm bán chạy</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- More Categoies End -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb Start -->
+<div class="breadcrumb-area mt-30">
+    <div class="container">
+        <div class="breadcrumb">
+            <ul class="d-flex align-items-center">
+                <li><a href="@Url.Action("Index", "Home")">Trang chủ</a></li>
+                <li><a href="@Url.Action("TatCaSP", "Home")">Sản phẩm</a></li>
+                <li class="active"><a href="product.html">Chi tiết sản phẩm</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Breadcrumb End -->
+<!-- Product Thumbnail Start -->
+<div class="main-product-thumbnail ptb-100 ptb-sm-60">
+    <div class="container">
+        <div class="thumb-bg">
+            <div class="row">
+                <!-- Main Thumbnail Image Start -->
+                <div class="col-lg-5 mb-all-40">
+                    <!-- Thumbnail Large Image start -->
+                    <div class="tab-content">
+                        <div id="thumb1" class="tab-pane fade show active">
+                            <a data-fancybox="images" href="@Model.Image"><img src="@Model.Image" alt="product-view"></a>
+                        </div>
+                        <div id="thumb2" class="tab-pane fade">
+                            <a data-fancybox="images" href="@Model.Image.Replace(".", ".1.")"><img src="@Model.Image.Replace(".", ".1.")" alt="product-view"></a>
+                        </div>
+                        <div id="thumb3" class="tab-pane fade">
+                            <a data-fancybox="images" href="@Model.Image.Replace(".", ".2.")"><img src="@Model.Image.Replace(".", ".2.")" alt="product-view"></a>
+                        </div>
+                        <div id="thumb4" class="tab-pane fade">
+                            <a data-fancybox="images" href="@Model.Image.Replace(".", ".3.")"><img src="@Model.Image.Replace(".", ".3.")" alt="product-view"></a>
+                        </div>
+                        <div id="thumb5" class="tab-pane fade">
+                            <a data-fancybox="images" href="@Model.Image.Replace(".", ".4.")"><img src="@Model.Image.Replace(".", ".4.")" alt="product-view"></a>
+                        </div>
+                    </div>
+                    <!-- Thumbnail Large Image End -->
+                    <!-- Thumbnail Image End -->
+                    <div class="product-thumbnail mt-15">   
+                        <div class="thumb-menu owl-carousel nav tabs-area" role="tablist">
+                            <a class="active" data-toggle="tab" href="#thumb1"><img src="@Model.Image" alt="product-thumbnail"></a>
+                            <a data-toggle="tab" href="#thumb2"><img src="@Model.Image.Replace(".", ".1.")" alt="product-thumbnail"></a>
+                            <a data-toggle="tab" href="#thumb3"><img src="@Model.Image.Replace(".", ".2.")" alt="product-thumbnail"></a>
+                            <a data-toggle="tab" href="#thumb4"><img src="@Model.Image.Replace(".", ".3.")" alt="product-thumbnail"></a>
+                            <a data-toggle="tab" href="#thumb5"><img src="@Model.Image.Replace(".", ".4.")" alt="product-thumbnail"></a>
+                        </div>
+                    </div>
+                    <!-- Thumbnail image end -->
+                </div>
+                <!-- Main Thumbnail Image End -->
+                <!-- Thumbnail Description Start -->
+                <div class="col-lg-7">
+                    <div class="thubnail-desc fix">
+                        <h3 class="product-header">@Model.TenSP</h3>
+                        <div class="rating-summary fix mtb-10">
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <div class="rating-feedback">
+                                <a href="#">(1234 lượt đánh giá)</a>
+                                <a href="#">Thêm nhận xét</a>
+                            </div>
+                        </div>
+                        <div class="pro-price mtb-30">
+                            <p class="d-flex align-items-center"><span class="prev-price">@String.Format(info, "{0:c0}", Model.GiaBanBanDau)</span><span class="price">@String.Format(info, "{0:c0}", giaTien)</span><span class="saving-price">save @Model.PhanTramGiamGia %</span></p>
+                        </div>
+                        <p class="mb-20 pro-desc-details">@Model.Mieuta</p>                       
+                        
+                        <div class="box-quantity d-flex hot-product2">
+
+                            <div class="pro-actions">
+                                <div class="actions-primary">
+                                    <a href="@Url.Action("AddToCart", "ShoppingCart", new{masp = @Model.Id_SanPham})" title="" data-original-title="Thêm vào giỏ hàng"> + Thêm vào</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-ref mt-20">
+                            <p><span class="in-stock"><i class="ion-checkmark-round"></i> Còn hàng</span></p>
+                        </div>
+                        <div class="socila-sharing mt-25">
+                            <ul class="d-flex">
+                                <li>share</li>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Thumbnail Description End -->
+            </div>
+            <!-- Row End -->
+        </div>
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Product Thumbnail End -->
+<!-- Product Thumbnail Description Start -->
+<div class="thumnail-desc pb-100 pb-sm-60">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="main-thumb-desc nav tabs-area" role="tablist">
+                    <li><a class="active" data-toggle="tab" href="#dtail">Product Details</a></li>
+                    <li><a data-toggle="tab" href="#review">Reviews</a></li>
+                </ul>
+                <!-- Product Thumbnail Tab Content Start -->
+                <div class="tab-content thumb-content border-default">
+                    <div id="dtail" class="tab-pane fade show active">
+                        <p>Thời trang đã tạo ra các bộ sưu tập được thiết kế đẹp mắt từ năm 2010. Thương hiệu cung cấp các thiết kế nữ tính mang đến những bộ váy nổi bật và tách biệt đầy phong cách, từ đó đã phát triển thành một bộ sưu tập may sẵn đầy đủ, trong đó mọi món đồ đều là một phần quan trọng trong tủ quần áo của phụ nữ. Kết quả? Vẻ ngoài mát mẻ, dễ dàng, sang trọng với sự thanh lịch trẻ trung và phong cách đặc trưng không thể nhầm lẫn. Tất cả các tác phẩm đẹp đều được sản xuất tại Ý và được sản xuất với sự chú ý lớn nhất. Giờ đây, Thời trang mở rộng ra nhiều loại phụ kiện bao gồm giày, mũ, thắt lưng và hơn thế nữa!</p>
+                    </div>
+                    <div id="review" class="tab-pane fade">
+                        <!-- Reviews Start -->
+                        <div class="review border-default universal-padding">
+                            <div class="group-title">
+                                <h2>ĐÁNH GIÁ CỦA KHÁCH HÀNG</h2>
+                            </div>
+                            <h4 class="review-mini-title">VietMark</h4>
+                            <ul class="review-list">
+                                <!-- Single Review List Start -->
+                                <li>
+                                    <span>Chất lượng</span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <label>VietMark</label>
+                                </li>
+                                <!-- Single Review List End -->
+                                <!-- Single Review List Start -->
+                                <li>
+                                    <span>Giá</span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <label>Nhận xét bởi <a href="https://themeforest.net/user/hastech">VietMark</a></label>
+                                </li>
+                                <!-- Single Review List End -->
+                                <!-- Single Review List Start -->
+                                <li>
+                                    <span>Giá trị</span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <label>Đăng vào 20/4/2023</label>
+                                </li>
+                                <!-- Single Review List End -->
+                            </ul>
+                        </div>
+                        <!-- Reviews End -->
+                        <!-- Reviews Start -->
+                        <div class="review border-default universal-padding mt-30">
+                            <h2 class="review-title mb-30">Bạn đang xem sản phẩm: <span>@Model.TenSP</span></h2>
+                            <p class="review-mini-title">Đánh giá của bạn</p>
+                            <ul class="review-list">
+                                <!-- Single Review List Start -->
+                                <li>
+                                    <span>Chất lượng</span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </li>
+                                <!-- Single Review List End -->
+                                <!-- Single Review List Start -->
+                                <li>
+                                    <span>Giá</span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </li>
+                                <!-- Single Review List End -->
+                                <!-- Single Review List Start -->
+                                <li>
+                                    <span>Giá trị</span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </li>
+                                <!-- Single Review List End -->
+                            </ul>
+                            <!-- Reviews Field Start -->
+                            <div class="riview-field mt-40">
+                                <form autocomplete="off" action="#">
+                                    <div class="form-group">
+                                        <label class="req" for="sure-name">Tên của bạn</label>
+                                        <input type="text" class="form-control" id="sure-name" required="required">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="req" for="subject">Tóm tắt</label>
+                                        <input type="text" class="form-control" id="subject" required="required">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="req" for="comments">Đánh giá chi tiết</label>
+                                        <textarea class="form-control" rows="5" id="comments" required="required"></textarea>
+                                    </div>
+                                    <button type="submit" class="customer-btn">HOÀN THÀNH</button>
+                                </form>
+                            </div>
+                            <!-- Reviews Field Start -->
+                        </div>
+                        <!-- Reviews End -->
+                    </div>
+                </div>
+                <!-- Product Thumbnail Tab Content End -->
+            </div>
+        </div>
+        <!-- Row End -->
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Product Thumbnail Description End -->

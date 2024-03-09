@@ -1,0 +1,342 @@
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\VietMark.dll.config
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\VietMark.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\VietMark.pdb
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\csc.exe
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\csc.exe.config
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\csc.rsp
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\csi.exe
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\csi.exe.config
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\csi.rsp
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.AppContext.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.Console.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.IO.Compression.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.Net.Http.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.Net.Sockets.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.ValueTuple.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.Xml.XPath.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\vbc.exe
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\vbc.exe.config
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\vbc.rsp
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\VBCSCompiler.exe
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Antlr3.Runtime.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\EntityFramework.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\EntityFramework.SqlServer.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.Owin.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.Owin.Security.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Newtonsoft.Json.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Owin.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\System.Web.Helpers.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\System.Web.Mvc.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\System.Web.Optimization.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\System.Web.Razor.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\System.Web.WebPages.Deployment.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\System.Web.WebPages.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\System.Web.WebPages.Razor.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\WebGrease.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\System.Web.Helpers.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\System.Web.Mvc.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\System.Web.Optimization.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\System.Web.Razor.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\System.Web.WebPages.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\System.Web.WebPages.Deployment.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\System.Web.WebPages.Razor.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Newtonsoft.Json.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Antlr3.Runtime.pdb
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\EntityFramework.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\EntityFramework.SqlServer.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.Owin.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.Owin.Security.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\obj\Debug\VietMark.csproj.AssemblyReference.cache
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\obj\Debug\VietMark.csproj.CoreCompileInputs.cache
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\obj\Debug\VietMark.csproj.CopyComplete
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\obj\Debug\VietMark.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\obj\Debug\VietMark.pdb
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\PagedList.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\PagedList.Mvc.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\PagedList.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\PagedList.Mvc.xml
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Common.dll
+C:\Users\XXX\Documents\ASP.NET WEB Application\DoAnCoSo\VietMark\VietMark\bin\Common.pdb
+C:\Hutech\VietMark\VietMark\bin\VietMark.dll.config
+C:\Hutech\VietMark\VietMark\bin\VietMark.dll
+C:\Hutech\VietMark\VietMark\bin\VietMark.pdb
+C:\Hutech\VietMark\VietMark\bin\roslyn\csc.exe
+C:\Hutech\VietMark\VietMark\bin\roslyn\csc.exe.config
+C:\Hutech\VietMark\VietMark\bin\roslyn\csc.rsp
+C:\Hutech\VietMark\VietMark\bin\roslyn\csi.exe
+C:\Hutech\VietMark\VietMark\bin\roslyn\csi.exe.config
+C:\Hutech\VietMark\VietMark\bin\roslyn\csi.rsp
+C:\Hutech\VietMark\VietMark\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Hutech\VietMark\VietMark\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Hutech\VietMark\VietMark\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Hutech\VietMark\VietMark\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.AppContext.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.Collections.Immutable.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.Console.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.Globalization.Calendars.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.IO.Compression.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.IO.FileSystem.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.Net.Http.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.Net.Sockets.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.Reflection.Metadata.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.ValueTuple.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.Xml.XPath.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Hutech\VietMark\VietMark\bin\roslyn\vbc.exe
+C:\Hutech\VietMark\VietMark\bin\roslyn\vbc.exe.config
+C:\Hutech\VietMark\VietMark\bin\roslyn\vbc.rsp
+C:\Hutech\VietMark\VietMark\bin\roslyn\VBCSCompiler.exe
+C:\Hutech\VietMark\VietMark\bin\roslyn\VBCSCompiler.exe.config
+C:\Hutech\VietMark\VietMark\bin\Antlr3.Runtime.dll
+C:\Hutech\VietMark\VietMark\bin\Common.dll
+C:\Hutech\VietMark\VietMark\bin\EntityFramework.dll
+C:\Hutech\VietMark\VietMark\bin\EntityFramework.SqlServer.dll
+C:\Hutech\VietMark\VietMark\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Hutech\VietMark\VietMark\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Hutech\VietMark\VietMark\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Hutech\VietMark\VietMark\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Hutech\VietMark\VietMark\bin\Microsoft.Owin.dll
+C:\Hutech\VietMark\VietMark\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Hutech\VietMark\VietMark\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Hutech\VietMark\VietMark\bin\Microsoft.Owin.Security.dll
+C:\Hutech\VietMark\VietMark\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Hutech\VietMark\VietMark\bin\Microsoft.Owin.Security.Google.dll
+C:\Hutech\VietMark\VietMark\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Hutech\VietMark\VietMark\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Hutech\VietMark\VietMark\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Hutech\VietMark\VietMark\bin\Microsoft.Web.Infrastructure.dll
+C:\Hutech\VietMark\VietMark\bin\Newtonsoft.Json.dll
+C:\Hutech\VietMark\VietMark\bin\Owin.dll
+C:\Hutech\VietMark\VietMark\bin\PagedList.dll
+C:\Hutech\VietMark\VietMark\bin\PagedList.Mvc.dll
+C:\Hutech\VietMark\VietMark\bin\System.Web.Helpers.dll
+C:\Hutech\VietMark\VietMark\bin\System.Web.Mvc.dll
+C:\Hutech\VietMark\VietMark\bin\System.Web.Optimization.dll
+C:\Hutech\VietMark\VietMark\bin\System.Web.Razor.dll
+C:\Hutech\VietMark\VietMark\bin\System.Web.WebPages.Deployment.dll
+C:\Hutech\VietMark\VietMark\bin\System.Web.WebPages.dll
+C:\Hutech\VietMark\VietMark\bin\System.Web.WebPages.Razor.dll
+C:\Hutech\VietMark\VietMark\bin\WebGrease.dll
+C:\Hutech\VietMark\VietMark\bin\Common.pdb
+C:\Hutech\VietMark\VietMark\bin\PagedList.xml
+C:\Hutech\VietMark\VietMark\bin\PagedList.Mvc.xml
+C:\Hutech\VietMark\VietMark\bin\System.Web.Helpers.xml
+C:\Hutech\VietMark\VietMark\bin\System.Web.Mvc.xml
+C:\Hutech\VietMark\VietMark\bin\System.Web.Optimization.xml
+C:\Hutech\VietMark\VietMark\bin\System.Web.Razor.xml
+C:\Hutech\VietMark\VietMark\bin\System.Web.WebPages.xml
+C:\Hutech\VietMark\VietMark\bin\System.Web.WebPages.Deployment.xml
+C:\Hutech\VietMark\VietMark\bin\System.Web.WebPages.Razor.xml
+C:\Hutech\VietMark\VietMark\bin\Newtonsoft.Json.xml
+C:\Hutech\VietMark\VietMark\bin\Antlr3.Runtime.pdb
+C:\Hutech\VietMark\VietMark\bin\EntityFramework.xml
+C:\Hutech\VietMark\VietMark\bin\EntityFramework.SqlServer.xml
+C:\Hutech\VietMark\VietMark\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Hutech\VietMark\VietMark\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Hutech\VietMark\VietMark\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Hutech\VietMark\VietMark\bin\Microsoft.Owin.xml
+C:\Hutech\VietMark\VietMark\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Hutech\VietMark\VietMark\bin\Microsoft.Owin.Security.xml
+C:\Hutech\VietMark\VietMark\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Hutech\VietMark\VietMark\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Hutech\VietMark\VietMark\bin\Microsoft.Owin.Security.Google.xml
+C:\Hutech\VietMark\VietMark\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Hutech\VietMark\VietMark\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Hutech\VietMark\VietMark\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Hutech\VietMark\VietMark\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Hutech\VietMark\VietMark\obj\Debug\VietMark.csproj.AssemblyReference.cache
+C:\Hutech\VietMark\VietMark\obj\Debug\VietMark.csproj.CoreCompileInputs.cache
+C:\Hutech\VietMark\VietMark\obj\Debug\VietMark.csproj.CopyComplete
+C:\Hutech\VietMark\VietMark\obj\Debug\VietMark.dll
+C:\Hutech\VietMark\VietMark\obj\Debug\VietMark.pdb
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\VietMark.dll.config
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\VietMark.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\VietMark.pdb
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\csc.exe
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\csc.exe.config
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\csc.rsp
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\csi.exe
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\csi.exe.config
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\csi.rsp
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.AppContext.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.Console.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.IO.Compression.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.Net.Http.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.Net.Sockets.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.ValueTuple.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.Xml.XPath.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\vbc.exe
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\vbc.exe.config
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\vbc.rsp
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\VBCSCompiler.exe
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Antlr3.Runtime.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Common.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\EntityFramework.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\EntityFramework.SqlServer.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.Owin.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.Owin.Security.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Newtonsoft.Json.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Owin.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\PagedList.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\PagedList.Mvc.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\System.Web.Helpers.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\System.Web.Mvc.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\System.Web.Optimization.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\System.Web.Razor.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\System.Web.WebPages.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\System.Web.WebPages.Razor.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\WebGrease.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Common.pdb
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\PagedList.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\PagedList.Mvc.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\System.Web.Helpers.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\System.Web.Mvc.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\System.Web.Optimization.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\System.Web.Razor.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\System.Web.WebPages.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\System.Web.WebPages.Razor.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Newtonsoft.Json.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Antlr3.Runtime.pdb
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\EntityFramework.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\EntityFramework.SqlServer.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.Owin.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.Owin.Security.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\obj\Debug\VietMark.csproj.AssemblyReference.cache
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\obj\Debug\VietMark.csproj.CoreCompileInputs.cache
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\obj\Debug\VietMark.csproj.CopyComplete
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\obj\Debug\VietMark.dll
+C:\Users\MSI GE66\Desktop\VietMark\VietMark\obj\Debug\VietMark.pdb

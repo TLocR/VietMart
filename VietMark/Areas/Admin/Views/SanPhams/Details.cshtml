@@ -1,0 +1,78 @@
+﻿@model VietMark.Models.SanPham
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/_AdminLayout.cshtml";
+    var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+}
+
+<link href="~/Content/css/detail.css" rel="stylesheet" />
+<div>
+
+    <div class="col-md-6">
+        <div class="card-body">
+            <br />
+            <h2 id="title">Thông tin sản phẩm</h2>
+
+            <div class="product-details">
+                <div class="product-image">
+                    <img src="@Model.Image" />
+                </div>
+                <div class="product-info">
+                    <h4 class="tieude">
+                        Tên Sản Phẩm:
+                    </h4>
+                    <h1>@Html.DisplayFor(model => model.TenSP)</h1><br />
+                    <h4 class="tieude">
+                        Thuộc Cửa Hàng: @Html.DisplayFor(model => model.CuaHang.Ten_CuaHang)
+                    </h4>
+                    <h4 class="tieude">
+                        Mã code: @Html.DisplayFor(model => model.code)
+                    </h4>
+                    <h4 style="width: 586px;" class="tieude">
+                        Thời gian tạo sản phẩm: @Html.DisplayFor(model => model.ThoiGianTao)
+                    </h4>
+                    <h4 class="tieude">
+                        Thời gian sửa thông tin gần nhất: @Html.DisplayFor(model => model.ThoiGianSua)
+                    </h4>
+                    @*<p>@Html.DisplayFor(model => model.CuaHang.Ten_CuaHang)</p>*@
+                    <h4 class="tieude">
+                        Loại Sản Phẩm: @Html.DisplayFor(model => model.LoaiSanPham.TenLoaiSP)
+                    </h4>
+                    @*<p>@Html.DisplayFor(model => model.LoaiSanPham.TenLoaiSP)</p>*@
+                    <h4 class="tieude">
+                        Miêu Tả:
+                    </h4>
+
+                    <p>@Html.DisplayFor(model => model.Mieuta)</p>
+                    <h2>Giá Bán Gốc: @String.Format(info, "{0:c0}", Model.GiaBanBanDau)</h2>
+                    <p>Số Lượng Tồn Kho: @Html.DisplayFor(model => model.SoLuongTon)</p>
+
+                    <h4 class="tieude">
+                        Phần Trăm Đang Giảm Giá: @Html.DisplayFor(model => model.PhanTramGiamGia)%
+                    </h4>
+
+
+                    <br />
+                    <button style="padding: 10px 16px;" type="button" class="btn btn-primary">@Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.Id_SanPham })  </button>
+                    <button type="button" class="btn btn-success">@Html.ActionLink("Quay lại", "Index")</button>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+@*<p>
+        @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.Id_SanPham }) |
+        @Html.ActionLink("Quay lại", "Index")
+    </p>*@
+
+

@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43017052-A836-44FB-BE28-72B79788A856}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Common</RootNamespace>
+    <AssemblyName>Common</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MailHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\img\banner\5.jpg" />
+    <Content Include="Content\img\banner\banner-fnd.jpg" />
+    <Content Include="Content\img\banner\banner-kds.jpg" />
+    <Content Include="Content\img\banner\banner-sidebar.jpg" />
+    <Content Include="Content\img\banner\banner-wmn.jpg" />
+    <Content Include="Content\img\banner\banner3-1.jpg" />
+    <Content Include="Content\img\banner\banner3-2.jpg" />
+    <Content Include="Content\img\banner\banner3-3.jpg" />
+    <Content Include="Content\img\banner\banner3-4.jpg" />
+    <Content Include="Content\img\banner\banner3-5.jpg" />
+    <Content Include="Content\img\banner\banner3-6.jpg" />
+    <Content Include="Content\img\banner\banner3-7.jpg" />
+    <Content Include="Content\img\banner\banner3-8.jpg" />
+    <Content Include="Content\img\banner\electorince.jpg" />
+    <Content Include="Content\img\banner\h1-band1.jpg" />
+    <Content Include="Content\img\banner\h1-band2.jpg" />
+    <Content Include="Content\img\banner\h1-banner.jpg" />
+    <Content Include="Content\img\banner\h1-banner3.jpg" />
+    <Content Include="Content\img\banner\pop-banner.jpg" />
+    <Content Include="Content\img\blog\1.jpg" />
+    <Content Include="Content\img\blog\10.jpg" />
+    <Content Include="Content\img\blog\2.jpg" />
+    <Content Include="Content\img\brand\1.jpg" />
+    <Content Include="Content\img\brand\2.jpg" />
+    <Content Include="Content\img\brand\3.jpg" />
+    <Content Include="Content\img\brand\4.jpg" />
+    <Content Include="Content\img\favicon.ico" />
+    <Content Include="Content\img\header\1.jpg" />
+    <Content Include="Content\img\header\2.jpg" />
+    <Content Include="Content\img\icon\bg-l-sale.png" />
+    <Content Include="Content\img\icon\social-img1.png" />
+    <Content Include="Content\img\icon\social-img2.png" />
+    <Content Include="Content\img\logo\logo.png" />
+    <Content Include="Content\img\logo\logo2.png" />
+    <Content Include="Content\img\payment\1.png" />
+    <Content Include="Content\img\products\1.jpg" />
+    <Content Include="Content\img\products\10.jpg" />
+    <Content Include="Content\img\products\11.jpg" />
+    <Content Include="Content\img\products\12.jpg" />
+    <Content Include="Content\img\products\13.jpg" />
+    <Content Include="Content\img\products\14.jpg" />
+    <Content Include="Content\img\products\15.jpg" />
+    <Content Include="Content\img\products\16.jpg" />
+    <Content Include="Content\img\products\17.jpg" />
+    <Content Include="Content\img\products\18.jpg" />
+    <Content Include="Content\img\products\19.jpg" />
+    <Content Include="Content\img\products\2.jpg" />
+    <Content Include="Content\img\products\20.jpg" />
+    <Content Include="Content\img\products\21.jpg" />
+    <Content Include="Content\img\products\22.jpg" />
+    <Content Include="Content\img\products\23.jpg" />
+    <Content Include="Content\img\products\24.jpg" />
+    <Content Include="Content\img\products\25.jpg" />
+    <Content Include="Content\img\products\26.jpg" />
+    <Content Include="Content\img\products\27.jpg" />
+    <Content Include="Content\img\products\28.jpg" />
+    <Content Include="Content\img\products\29.jpg" />
+    <Content Include="Content\img\products\3.jpg" />
+    <Content Include="Content\img\products\30.jpg" />
+    <Content Include="Content\img\products\31.jpg" />
+    <Content Include="Content\img\products\32.jpg" />
+    <Content Include="Content\img\products\33.jpg" />
+    <Content Include="Content\img\products\34.jpg" />
+    <Content Include="Content\img\products\35.jpg" />
+    <Content Include="Content\img\products\36.jpg" />
+    <Content Include="Content\img\products\37.jpg" />
+    <Content Include="Content\img\products\38.jpg" />
+    <Content Include="Content\img\products\39.jpg" />
+    <Content Include="Content\img\products\4.jpg" />
+    <Content Include="Content\img\products\40.jpg" />
+    <Content Include="Content\img\products\41.jpg" />
+    <Content Include="Content\img\products\42.jpg" />
+    <Content Include="Content\img\products\43.jpg" />
+    <Content Include="Content\img\products\5.jpg" />
+    <Content Include="Content\img\products\6.jpg" />
+    <Content Include="Content\img\products\7.jpg" />
+    <Content Include="Content\img\products\8.jpg" />
+    <Content Include="Content\img\products\9.jpg" />
+    <Content Include="Content\img\slider\1.jpg" />
+    <Content Include="Content\img\slider\2.jpg" />
+    <Content Include="Content\img\slider\3.jpg" />
+    <Content Include="Content\img\slider\4.jpg" />
+    <Content Include="Content\img\slider\5.jpg" />
+    <Content Include="Content\img\slider\6.jpg" />
+    <Content Include="Content\img\slider\7.jpg" />
+    <Content Include="Content\img\slider\8.jpg" />
+    <Content Include="Content\img\team\1.jpg" />
+    <Content Include="Content\img\team\2.jpg" />
+    <Content Include="Content\img\team\3.jpg" />
+    <Content Include="Content\img\team\4.jpg" />
+    <Content Include="Content\img\vertical-menu\1.png" />
+    <Content Include="Content\img\vertical-menu\10.png" />
+    <Content Include="Content\img\vertical-menu\11.png" />
+    <Content Include="Content\img\vertical-menu\3.png" />
+    <Content Include="Content\img\vertical-menu\4.png" />
+    <Content Include="Content\img\vertical-menu\5.png" />
+    <Content Include="Content\img\vertical-menu\6.png" />
+    <Content Include="Content\img\vertical-menu\7.png" />
+    <Content Include="Content\img\vertical-menu\8.png" />
+    <Content Include="Content\img\vertical-menu\9.png" />
+    <Content Include="Content\img\vertical-menu\icon-collapse.png" />
+    <Content Include="Content\img\vertical-menu\icon-expand.png" />
+    <Content Include="Content\img\vertical-menu\sub-img1.jpg" />
+    <Content Include="Content\img\vertical-menu\sub-img2.jpg" />
+    <Content Include="Content\img\vertical-menu\sub-img3.jpg" />
+    <Content Include="Content\PagedList.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,57 @@
+﻿@model VietMark.Models.CuaHang
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/_AdminLayout.cshtml";
+}
+
+<h2>Nhấn vào xác nhận xóa để xóa khách hàng</h2>
+
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Email
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AspNetUser.Email)
+        </dd>
+
+        <dt>
+            Tên cửa hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ten_CuaHang)
+        </dd>
+
+        <dt>
+            Địa chỉ
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaChi)
+        </dd>
+
+        <dt>
+            Số điện thoại
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoDienThoai)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xác nhận xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Quay lại", "Index")
+        </div>
+    }
+</div>

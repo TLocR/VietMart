@@ -1,0 +1,129 @@
+﻿
+@{
+    ViewBag.Title = "ThanhToan";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-xl-3 col-lg-4 d-none d-lg-block">
+            <div class="vertical-menu mb-all-30">
+                <nav>
+                    <ul style="display: none" class="vertical-menu-list">
+                        <li>
+                            <a href="@Url.Action("list_product_by_cat_id", "Home", new {cat_id = 0})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Tất cả sản phẩm</a>
+                        </li>
+                        <li class="">
+                            <a href="@Url.Action("list_product_by_cat_id", "Home", new {cat_id = 1})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Đồ nam<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            <ul class="ht-dropdown mega-child">
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {cat_id = 4})">Phụ kiện</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {cat_id = 1})">Quần/Áo</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {cat_id = 6})">Giày/Dép</a>
+                                </li>
+                            </ul>
+                            <!-- category submenu end-->
+                        </li>
+                        <li class="">
+                            <a href="@Url.Action("list_product_by_cat_id", "Home", new {cat_id = 2})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Đồ nữ<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+
+                            <ul class="ht-dropdown mega-child">
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {cat_id = 5})">Phụ kiện</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {cat_id = 2})">Quần/Áo</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {cat_id = 7})">Giày/Dép</a>
+                                </li>
+                            </ul>
+                            <!-- category submenu end-->
+                        </li>
+                        <li class="">
+                            <a href="@Url.Action("list_product_by_cat_id", "Home", new {cat_id = 3})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Đồ trẻ em<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+
+                            <ul class="ht-dropdown mega-child">
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {cat_id = 3})">Quần/Áo</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {cat_id = 8})">Giày/Dép</a>
+                                </li>
+                            </ul>
+                            <!-- category submenu end-->
+                        </li>
+                        <!-- More Categoies Start -->
+                        <li id="cate-toggle" class="category-menu v-cat-menu">
+                            <ul>
+                                <li class="has-sub">
+                                    <a href="#">Xem thêm</a>
+                                    <ul class="category-sub">
+                                        <li><a href="#"><span><img src="~/Content/img/vertical-menu/11.png" alt="menu-icon"></span>Sản phẩm bán chạy</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- More Categoies End -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<div style=" height: 700px ;margin-top: 50px" class="container">
+
+    <form class="row" action="@Url.Action("Order","ShoppingCart")">
+        <div class="col-md-7">
+            <h2>Nhập thông tin đặt hàng</h2><br />
+
+            <label style="font-size: 20px; font-weight:  bold" for="fullname">Họ và tên người nhận</label><br />
+            <input style="padding: 5px 0; width: 40%" type="text" name="fullname" id="fullname" /><br /><br />
+            <br />
+            <label style="font-size: 20px; font-weight:  bold" for="number_phone">Số điện thoại người nhận</label><br />
+            <input style="padding: 5px 0; width: 40%" type="text" name="number_phone" id="number_phone" /><br /><br />
+            <br />
+
+            <label style="font-size: 20px; font-weight:  bold" for="">Chọn địa chỉ</label><br />
+            <div class="form-group">
+                <select style="padding: 10px 2px; margin-bottom: 10px; width: 60%" name="" id="province">
+                </select>
+                <br />
+                <select style="padding: 10px 2px; margin-bottom: 10px; width: 60%" name="" id="district">
+                    <option value="">Chọn quận</option>
+                </select>
+                <br />
+                <select style="padding: 10px 2px; margin-bottom: 10px; width: 60%" name="" id="ward">
+                    <option value="">Chọn phường</option>
+                </select><br />
+            </div>
+
+            <label style="font-size: 16px; font-weight: bold;" for="">Vui lòng nhập thêm địa chỉ số nhà cụ thể</label><br />
+            <input style="padding: 10px 0; width: 60%" type="text" name="home_number" id="home_number" /><br /><br />
+
+            <input style="padding: 10px 0; width: 40%; display: none" type="text" name="address_sum" id="result" /><br /><br />
+
+
+        </div>
+        <div style="position: relative" class="col-md-5">
+            <h2>Chọn hình thức thanh toán</h2>
+
+            <a href="@Url.Action("Payment","ShoppingCart")"><img style="max-width: 100px" src="/Content/img/icon/MoMo_Logo.png" /></a>
+            <a href=""><img style="max-width: 120px" src="/Content/img/icon/zalo_pay.png" /></a>
+            <a href="@Url.Action("Vnpay","ShoppingCart")"><img style="max-width: 100px" src="~/Content/img/icon/vn_pay.png" /></a>
+            <br /><br /><br />
+            <input type="checkbox" id="pay_card" name="pay_card">
+            <label for="pay_card">Thanh toán bằng thẻ ngân hàng</label><br>
+            <input type="checkbox" id="pay_at_home" name="pay_at_home">
+            <label for="pay_at_home">Thanh toán tại nhà</label><br>
+            <button style="position: absolute; top: 300px; left: 0" type="submit" value="Order" class="btn btn-success">Đặt hàng</button>
+        </div>
+        
+    </form>
+        
+
+</div>
+

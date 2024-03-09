@@ -1,0 +1,621 @@
+﻿@model List<VietMark.Models.SanPham>
+
+<!-- Categorie Menu & Slider Area Start Here -->
+<div class="main-page-banner pb-50 off-white-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 d-none d-lg-block">
+                <div class="vertical-menu mb-all-30">
+                    <nav>
+                        <ul style="display: none" class="vertical-menu-list">
+                            <li>
+                                <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "tat-ca-san-pham", cat_id = 0})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Tất cả sản phẩm</a>
+                            </li>
+                            <li class="">
+                                <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "san-pham-nam", cat_id = 1})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Đồ nam<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                <ul class="ht-dropdown mega-child">
+                                    <li>
+                                        <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "phu-kien-nam", cat_id = 4})">Phụ kiện</a>
+                                    </li>
+                                    <li>
+                                        <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "phu-kien-nam", cat_id = 1})">Quần/Áo</a>
+                                    </li>
+                                    <li>
+                                        <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "giay-dep-nam", cat_id = 6})">Giày/Dép</a>
+                                    </li>
+                                </ul>
+                                <!-- category submenu end-->
+                            </li>
+                            <li class="">
+                                <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "san-pham-nu", cat_id = 2})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Đồ nữ<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+
+                                <ul class="ht-dropdown mega-child">
+                                    <li>
+                                        <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "phu-kien-nu", cat_id = 5})">Phụ kiện</a>
+                                    </li>
+                                    <li>
+                                        <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "phu-kien-nu", cat_id = 2})">Quần/Áo</a>
+                                    </li>
+                                    <li>
+                                        <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "giay-dep-nu", cat_id = 7})">Giày/Dép</a>
+                                    </li>
+                                </ul>
+                                <!-- category submenu end-->
+                            </li>
+                            <li class="">
+                                <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "san-pham-tre-em", cat_id = 3})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Đồ trẻ em<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+
+                                <ul class="ht-dropdown mega-child">
+                                    <li>
+                                        <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "quan-ao-tre-em", cat_id = 3})">Quần/Áo</a>
+                                    </li>
+                                    <li>
+                                        <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "giay-dep-tre-em", cat_id = 8})">Giày/Dép</a>
+                                    </li>
+                                </ul>
+                                <!-- category submenu end-->
+                            </li>
+                            <!-- More Categoies Start -->
+                            <li id="cate-toggle" class="category-menu v-cat-menu">
+                                <ul>
+                                    <li class="has-sub">
+                                        <a href="#">Xem thêm</a>
+                                        <ul class="category-sub">
+                                            <li><a href="#"><span><img src="~/Content/img/vertical-menu/11.png" alt="menu-icon"></span>Sản phẩm bán chạy</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- More Categoies End -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Categorie Menu & Slider Area End Here -->
+<!-- Brand Banner Area Start Here -->
+<div class="image-banner pb-50 off-white-bg">
+    <div class="container">
+        <div class="col-img">
+            <a href="#"><img src="~/Content/img/banner/h1-banner.jpg" alt="image banner"></a>
+        </div>
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Brand Banner Area End Here -->
+<!-- Hot Deal Products Start Here -->
+<div class="hot-deal-products off-white-bg pb-90 pb-sm-50">
+    <div class="container">
+        <!-- Product Title Start -->
+        <div class="post-title pb-30">
+            <h2>Giảm giá sốc</h2>
+        </div>
+        <!-- Product Title End -->
+        <!-- Hot Deal Product Activation Start -->
+        <div class="hot-deal-active owl-carousel">
+
+            @foreach (var item in Model)
+            {
+                if (item.PhanTramGiamGia > 0)   
+                {
+                    string imgOdd = item.Image;
+                    string imgNew = imgOdd.Replace(".", ".2.");
+                    var date = DateTime.Today.AddDays(1);
+                    var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+                    var giaTien = (item.GiaBanBanDau * (100 - item.PhanTramGiamGia)) / 100;
+                    var metatitle = ((VietMark.Controllers.HomeController)this.ViewContext.Controller).ConvertToUnSign(item.TenSP);
+                    //var metatitle = item.TenSP.Replace(" ", "-");
+                    <!-- Single Product Start -->
+                    <div class="single-product">
+                        <!-- Product Image Start -->
+                        <div class="pro-img">
+                            <a href="@Url.Action("Details", "SanPham", new {title = metatitle, maSP = item.Id_SanPham})">
+                                <img class="primary-img" src="@item.Image" alt="single-product">
+                                <img class="secondary-img" src="@imgNew" alt="single-product">
+                            </a>
+                            <div class="countdown" data-countdown="@date"></div>
+                            <a href="@Url.Action("Details", "SanPham", new {title = metatitle, maSP = item.Id_SanPham})" class="quick_view" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                        </div>
+                        <!-- Product Image End -->
+                        <!-- Product Content Start -->
+                        <div class="pro-content">
+                            <div class="pro-info">
+                                <h4><a href="@Url.Action("Details", "SanPham", new {title = metatitle, maSP = item.Id_SanPham})">@item.TenSP</a></h4>
+                                <p><span class="price"> @String.Format(info, "{0:c0}", giaTien) </span><del class="prev-price">@String.Format(info, "{0:c0}", item.GiaBanBanDau)</del></p>
+                                <div class="label-product l_sale">@item.PhanTramGiamGia<span class="symbol-percent">%</span></div>
+                            </div>
+                            <div class="pro-actions">
+                                <div class="actions-primary">
+                                    <a href="@Url.Action("AddToCart", "ShoppingCart", new{masp = item.Id_SanPham})" title="Thêm vào giỏ hàng"> + Thêm vào</a>
+                                    @*<input type="button" name="AddToCart" value="Thêm vào" class="btn actions-primary" Itemid="@item.MaSP" id="btnAddToCart" onclick="AddToCart(this)" />*@
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product Content End -->
+                    </div>
+                    <!-- Single Product End -->
+                }
+            }
+
+
+        </div>
+        <!-- Hot Deal Product Active End -->
+
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Hot Deal Products End Here -->
+<!-- Hot Deal Products End Here -->
+<!-- Big Banner Start Here -->
+<div class="big-banner mt-100 pb-85 mt-sm-60 pb-sm-45">
+    <div class="container banner-2">
+        <div class="banner-box">
+            <div class="col-img">
+                <a href="#"><img src="~/Content/img/banner/banner3-1.jpg" alt="banner 3"></a>
+            </div>
+            <div class="col-img">
+                <a href="#"><img src="~/Content/img/banner/banner3-2.jpg" alt="banner 3"></a>
+            </div>
+        </div>
+        <div class="banner-box">
+            <div class="col-img">
+                <a href="#"><img src="~/Content/img/banner/banner3-3.jpg" alt="banner 3"></a>
+            </div>
+        </div>
+        <div class="banner-box">
+            <div class="col-img">
+                <a href="#"><img src="~/Content/img/banner/banner3-4.jpg" alt="banner 3"></a>
+            </div>
+            <div class="col-img">
+                <a href="#"><img src="~/Content/img/banner/banner3-5.jpg" alt="banner 3"></a>
+            </div>
+        </div>
+        <div class="banner-box">
+            <div class="col-img">
+                <a href="#"><img src="~/Content/img/banner/banner3-6.jpg" alt="banner 3"></a>
+            </div>
+        </div>
+        <div class="banner-box">
+            <div class="col-img">
+                <a href="#"><img src="~/Content/img/banner/banner3-7.jpg" alt="banner 3"></a>
+            </div>
+            <div class="col-img">
+                <a href="#"><img src="~/Content/img/banner/banner3-8.jpg" alt="banner 3"></a>
+            </div>
+        </div>
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Big Banner End Here -->
+<!-- Arrivals Products Area Start Here -->
+<div class="arrivals-product pb-85 pb-sm-45">
+    <div class="container">
+        <div class="main-product-tab-area">
+            <div class="tab-menu mb-25">
+                <div class="section-ttitle">
+                    <h2>Sản phẩm mới</h2>
+                </div>
+                <!-- Nav tabs -->
+                <ul class="nav tabs-area" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link " data-toggle="tab" href="#fshion">Thời trang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#beauty">Trang sức/Phụ kiện</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#kids">Giày/Dép</a>
+                    </li> 
+                    
+                </ul>
+
+            </div>
+
+            <!-- Tab Contetn Start -->
+            <div class="tab-content">
+                <div id="fshion" class="tab-pane fade">
+                    <!-- Arrivals Product Activation Start Here -->
+                    <div class="electronics-pro-active owl-carousel">
+                        @foreach (var item in Model)
+                        {
+                            if (item.Id_LoaiSanPham == 1 || item.Id_LoaiSanPham == 2 || item.Id_LoaiSanPham == 3)
+                            {
+                                string imgOdd = item.Image;
+                                string imgNew = imgOdd.Replace(".", ".2.");
+                                var date = DateTime.Today.AddDays(1);
+                                var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+                                var giaTien = (item.GiaBanBanDau * (100 - item.PhanTramGiamGia)) / 100;
+                                var metatitle = ((VietMark.Controllers.HomeController)this.ViewContext.Controller).ConvertToUnSign(item.TenSP);
+                                <!-- Double Product Start -->
+                                <div class="double-product">
+                                    <!-- Single Product Start -->
+                                    <div class="single-product">
+                                        <!-- Product Image Start -->
+                                        <div class="pro-img">
+                                            <a href="@Url.Action("Details", "SanPham", new {title = metatitle, maSP = item.Id_SanPham})">
+                                                <img class="primary-img" src="@item.Image" alt="single-product">
+                                                <img class="secondary-img" src="@imgNew" alt="single-product">
+                                            </a>
+                                            <a href="@Url.Action("Details", "SanPham", new {title = metatitle, maSP = item.Id_SanPham})" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                        </div>
+                                        <!-- Product Image End -->
+                                        <!-- Product Content Start -->
+                                        <div class="pro-content">
+                                            <div class="pro-info">
+                                                <h4><a href="product.html">@item.TenSP</a></h4>
+                                                <p><span class="price">@String.Format(info, "{0:c0}", giaTien)</span>@*<del class="prev-price">@String.Format(info, "{0:c0}", item.GiaBanBanDau)</del>*@</p>
+                                                @*<div class="label-product l_sale">@item.PhanTramGiamGia<span class="symbol-percent">%</span></div>*@
+                                            </div>
+                                            <div class="pro-actions">
+                                                <div class="actions-primary">
+                                                    <a href="@Url.Action("AddToCart", "ShoppingCart", new{masp = item.Id_SanPham})" title="Thêm vào giỏ hàng"> + Thêm vào</a>
+                                                </div>                                                
+                                            </div>
+                                        </div>
+                                        <!-- Product Content End -->
+                                        <span class="sticker-new">new</span>
+                                    </div>
+                                    <!-- Single Product End -->
+                                </div>
+                                <!-- Double Product End -->
+                            }
+                        }
+                    </div>
+                    <!-- Arrivals Product Activation End Here -->
+                </div>
+                <!-- #fshion End Here -->
+                <div id="kids" class="tab-pane fade show active">
+                    <!-- Arrivals Product Activation Start Here -->
+                    <div class="electronics-pro-active owl-carousel">
+                        @foreach (var item in Model)
+                        {
+                            if (item.Id_LoaiSanPham == 6 || item.Id_LoaiSanPham == 7 || item.Id_LoaiSanPham == 8)
+                            {
+                                string imgOdd = item.Image;
+                                string imgNew = imgOdd.Replace(".", ".2.");
+                                var date = DateTime.Today.AddDays(1);
+                                var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+                                var giaTien = (item.GiaBanBanDau * (100 - item.PhanTramGiamGia)) / 100;
+                                var metatitle = ((VietMark.Controllers.HomeController)this.ViewContext.Controller).ConvertToUnSign(item.TenSP);
+                                <!-- Double Product Start -->
+                                <div class="double-product">
+                                    <!-- Single Product Start -->
+                                    <div class="single-product">
+                                        <!-- Product Image Start -->
+                                        <div class="pro-img">
+                                            <a href="@Url.Action("Details", "SanPham", new {title = metatitle, maSP = item.Id_SanPham})">
+                                                <img class="primary-img" src="@item.Image" alt="single-product">
+                                                <img class="secondary-img" src="@imgNew" alt="single-product">
+                                            </a>
+                                            <a href="@Url.Action("Details", "SanPham", new {title = metatitle, maSP = item.Id_SanPham})" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                        </div>
+                                        <!-- Product Image End -->
+                                        <!-- Product Content Start -->
+                                        <div class="pro-content">
+                                            <div class="pro-info">
+                                                <h4><a href="product.html">@item.TenSP</a></h4>
+                                                <p><span class="price">@String.Format(info, "{0:c0}", giaTien)</span>@*<del class="prev-price">@String.Format(info, "{0:c0}", item.GiaBanBanDau)</del>*@</p>
+                                                @*<div class="label-product l_sale">@item.PhanTramGiamGia<span class="symbol-percent">%</span></div>*@
+                                            </div>
+                                            <div class="pro-actions">
+                                                <div class="actions-primary">
+                                                    <a href="@Url.Action("AddToCart", "ShoppingCart", new{masp = item.Id_SanPham})" title="Thêm vào giỏ hàng"> + Thêm vào</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Product Content End -->
+                                        <span class="sticker-new">new</span>
+                                    </div>
+                                    <!-- Single Product End -->
+                                </div>
+                                <!-- Double Product End -->
+                            }
+                        }
+                    </div>
+                    <!-- Arrivals Product Activation End Here -->
+                </div>
+                <!-- #fshion End Here -->
+                <div id="beauty" class="tab-pane fade">
+                    <!-- Arrivals Product Activation Start Here -->
+                    <div class="electronics-pro-active owl-carousel">
+                        @foreach (var item in Model)
+                        {
+                            if (item.Id_LoaiSanPham == 4 || item.Id_LoaiSanPham == 5 )
+                            {
+                                string imgOdd = item.Image;
+                                string imgNew = imgOdd.Replace(".", ".2.");
+                                var date = DateTime.Today.AddDays(1);
+                                var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+                                var giaTien = (item.GiaBanBanDau * (100 - item.PhanTramGiamGia)) / 100;
+                                var metatitle = ((VietMark.Controllers.HomeController)this.ViewContext.Controller).ConvertToUnSign(item.TenSP);
+                                <!-- Double Product Start -->
+                                <div class="double-product">
+                                    <!-- Single Product Start -->
+                                    <div class="single-product">
+                                        <!-- Product Image Start -->
+                                        <div class="pro-img">
+                                            <a href="@Url.Action("Details", "SanPham", new {title = metatitle, maSP = item.Id_SanPham})">
+                                                <img class="primary-img" src="@item.Image" alt="single-product">
+                                                <img class="secondary-img" src="@imgNew" alt="single-product">
+                                            </a>
+                                            <a href="@Url.Action("Details", "SanPham", new {title = metatitle, maSP = item.Id_SanPham})" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                        </div>
+                                        <!-- Product Image End -->
+                                        <!-- Product Content Start -->
+                                        <div class="pro-content">
+                                            <div class="pro-info">
+                                                <h4><a href="product.html">@item.TenSP</a></h4>
+                                                <p><span class="price">@String.Format(info, "{0:c0}", giaTien)</span>@*<del class="prev-price">@String.Format(info, "{0:c0}", item.GiaBanBanDau)</del>*@</p>
+                                                @*<div class="label-product l_sale">@item.PhanTramGiamGia<span class="symbol-percent">%</span></div>*@
+                                            </div>
+                                            <div class="pro-actions">
+                                                <div class="actions-primary">
+                                                    <a href="@Url.Action("AddToCart", "ShoppingCart", new{masp = item.Id_SanPham})" title="Thêm vào giỏ hàng"> + Thêm vào</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Product Content End -->
+                                        <span class="sticker-new">new</span>
+                                    </div>
+                                    <!-- Single Product End -->
+                                </div>
+                                <!-- Double Product End -->
+                            }
+                        }
+                    </div>
+                    <!-- Arrivals Product Activation End Here -->
+                </div>               
+            </div>
+            <!-- Tab Content End -->
+        </div>
+        <!-- main-product-tab-area-->
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Arrivals Products Area End Here -->
+<!-- Arrivals Products Area Start Here -->
+<div class="second-arrivals-product pb-45 pb-sm-5">
+    <div class="container">
+        <div class="main-product-tab-area">
+            <div class="tab-menu mb-25">
+                <div class="section-ttitle">
+                    <h2>Sản phẩm bán chạy</h2>
+                </div>                
+            </div>
+
+            <!-- Tab Contetn Start -->
+            <div class="tab-content">                                           
+                <div id="electronics2" class="tab-pane fade show active">
+                    <!-- Arrivals Product Activation Start Here -->
+                    <div class="best-seller-pro-active owl-carousel">
+
+                        @foreach (var item in Model)
+                        {
+                            if (item.Id_LoaiSanPham == 5)
+                            {
+                                string imgOdd = item.Image;
+                                string imgNew = imgOdd.Replace(".", ".2.");
+                                var date = DateTime.Today.AddDays(1);
+                                var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+                                var giaTien = (item.GiaBanBanDau * (100 - item.PhanTramGiamGia)) / 100;
+                                var metatitle = ((VietMark.Controllers.HomeController)this.ViewContext.Controller).ConvertToUnSign(item.TenSP);
+                                <!-- Single Product Start -->
+                                <div class="single-product">
+                                    <!-- Product Image Start -->
+                                    <div class="pro-img">
+                                        <a href="@Url.Action("Details", "SanPham", new {title = metatitle, maSP = item.Id_SanPham})">
+                                            <img class="primary-img" src="@item.Image" alt="single-product">
+                                            <img class="secondary-img" src="@imgNew" alt="single-product">
+                                        </a>
+                                        <a href="@Url.Action("Details", "SanPham", new {title = metatitle, maSP = item.Id_SanPham})" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                                    </div>
+                                    <!-- Product Image End -->
+                                    <!-- Product Content Start -->
+                                    <div class="pro-content">
+                                        <div class="pro-info">
+                                            <h4><a href="product.html">@item.TenSP</a></h4>
+                                            <p><span class="price">@String.Format(info, "{0:c0}", giaTien)</span><del class="prev-price">@String.Format(info, "{0:c0}", item.GiaBanBanDau)</del></p>
+                                            <div class="label-product l_sale">@item.PhanTramGiamGia<span class="symbol-percent">%</span></div>
+                                        </div>
+                                        <div class="pro-actions">
+                                            <div class="actions-primary">
+                                                <a href="@Url.Action("AddToCart", "ShoppingCart", new{masp = item.Id_SanPham})" title="Thêm vào giỏ hàng"> + Thêm vào</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product Content End -->
+                                    <span class="sticker-new">Hot</span>
+                                </div>
+                                <!-- Single Product End -->
+                            }
+                        }
+                    </div>
+                    <!-- Arrivals Product Activation End Here -->
+                </div>
+                <!-- #electronics End Here -->
+            </div>
+            <!-- Tab Content End -->
+        </div>
+        <!-- main-product-tab-area-->
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Arrivals Products Area End Here -->
+<!-- Like Products Area Start Here -->
+<div class="like-product ptb-95 off-white-bg pt-sm-50 pb-sm-55 ">
+    <div class="container">
+        <div class="like-product-area">
+            <h2 class="section-ttitle2 mb-30">Có thể bạn thích </h2>
+            <!-- Arrivals Product Activation Start Here -->
+            <div class="like-pro-active owl-carousel">
+
+                @for (int i = 0; i < Model.Count - 2; i+=2)
+                {
+                    var item = Model[i];
+                    string imgOdd = item.Image;
+                    string imgNew = imgOdd.Replace(".", ".2.");
+                    var date = DateTime.Today.AddDays(1);
+                    var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+                    var giaTien = (item.GiaBanBanDau * (100 - item.PhanTramGiamGia)) / 100;
+                    var metatitle = ((VietMark.Controllers.HomeController)this.ViewContext.Controller).ConvertToUnSign(item.TenSP);
+                    
+                    var item2 = Model[i+1];
+                    string imgOdd2 = item2.Image;
+                    string imgNew2 = imgOdd.Replace(".", ".2.");
+                    var date2 = DateTime.Today.AddDays(1);
+                    var info2 = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+                    var giaTien2 = (item2.GiaBanBanDau * (100 - item2.PhanTramGiamGia)) / 100;
+                    var metatitle2 = ((VietMark.Controllers.HomeController)this.ViewContext.Controller).ConvertToUnSign(item2.TenSP);
+                    <!-- Double Product Start -->
+                    <div class="double-product">
+                        <!-- Single Product Start -->
+                        <div class="single-product">
+                            <!-- Product Image Start -->
+                            <div class="pro-img">
+                                <a href="@Url.Action("Details", "SanPham", new {title = metatitle, maSP = item.Id_SanPham})">
+                                    <img class="primary-img" src="@item.Image" alt="single-product">
+                                    <img class="secondary-img" src="@imgNew" alt="single-product">
+                                </a>
+                                <a href="@Url.Action("Details", "SanPham", new {title = metatitle, maSP = item.Id_SanPham})" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                            </div>
+                            <!-- Product Image End -->
+                            <!-- Product Content Start -->
+                            <div class="pro-content">
+                                <div class="pro-info">
+                                    <h4><a href="product.html">@item.TenSP</a></h4>
+                                    <p><span class="price">@String.Format(info, "{0:c0}", giaTien)</span>@*<del class="prev-price">@String.Format(info, "{0:c0}", item.GiaBanBanDau)</del>*@</p>
+                                    @*<div class="label-product l_sale">@item.PhanTramGiamGia<span class="symbol-percent">%</span></div>*@
+                                </div>
+                                <div class="pro-actions">
+                                    <div class="actions-primary">
+                                        <a href="@Url.Action("AddToCart", "ShoppingCart", new{masp = item.Id_SanPham})" title="Thêm vào giỏ hàng"> + Thêm vào</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product Content End -->
+                           
+                        </div>
+                        <!-- Single Product End -->
+                    
+                        <!-- Single Product Start -->
+                        <div class="single-product">
+                            <!-- Product Image Start -->
+                            <div class="pro-img">
+                                <a href="@Url.Action("Details", "SanPham", new {title = metatitle2, maSP = item2.Id_SanPham})">
+                                    <img class="primary-img" src="@item2.Image" alt="single-product">
+                                    <img class="secondary-img" src="@imgNew2" alt="single-product">
+                                </a>
+                                <a href="@Url.Action("Details", "SanPham", new {title = metatitle2, maSP = item2.Id_SanPham})" class="quick_view" data-toggle="modal" data-target="#myModal" title="Quick View"><i class="lnr lnr-magnifier"></i></a>
+                            </div>
+                            <!-- Product Image End -->
+                            <!-- Product Content Start -->
+                            <div class="pro-content">
+                                <div class="pro-info">
+                                    <h4><a href="product.html">@item2.TenSP</a></h4>
+                                    <p><span class="price">@String.Format(info, "{0:c0}", giaTien)</span>@*<del class="prev-price">@String.Format(info, "{0:c0}", item.GiaBanBanDau)</del>*@</p>
+                                    @*<div class="label-product l_sale">@item.PhanTramGiamGia<span class="symbol-percent">%</span></div>*@
+                                </div>
+                                <div class="pro-actions">
+                                    <div class="actions-primary">
+                                        <a href="@Url.Action("AddToCart", "ShoppingCart", new{masp = item2.Id_SanPham})" title="Thêm vào giỏ hàng"> + Thêm vào</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product Content End -->
+                    
+                        </div>
+                        <!-- Single Product End -->
+                    </div>
+                    <!-- Double Product End -->
+                }
+            </div>
+            <!-- Arrivals Product Activation End Here -->
+        </div>
+        <!-- main-product-tab-area-->
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Lile Products Area End Here -->
+<!-- Brand Banner Area Start Here -->
+<div class="main-brand-banner pt-95 pb-100 pt-sm-55 pb-sm-60">
+    <div class="container">
+        <div class="section-ttitle mb-20">
+            <h2>Best Seller</h2>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-lg-3">
+                <div class="col-img">
+                    <img src="~/Content/img/banner/h1-band1.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <!-- Brand Banner Start -->
+                <div class="brand-banner owl-carousel">
+                    <div class="single-brand">
+                        <a href="#"><img class="img" src="~/Content/img/brand/1.jpg" alt="brand-image"></a>
+                        <a href="#"><img src="~/Content/img/brand/2.jpg" alt="brand-image"></a>
+                        <a href="#"><img src="~/Content/img/brand/3.jpg" alt="brand-image"></a>
+                    </div>
+                    <div class="single-brand">
+                        <a href="#"><img class="img" src="~/Content/img/brand/1.jpg" alt="brand-image"></a>
+                        <a href="#"><img src="~/Content/img/brand/2.jpg" alt="brand-image"></a>
+                        <a href="#"><img src="~/Content/img/brand/3.jpg" alt="brand-image"></a>
+                    </div>
+                    <div class="single-brand">
+                        <a href="#"><img src="~/Content/img/brand/1.jpg" alt="brand-image"></a>
+                        <a href="#"><img src="~/Content/img/brand/2.jpg" alt="brand-image"></a>
+                        <a href="#"><img src="~/Content/img/brand/3.jpg" alt="brand-image"></a>
+
+                    </div>
+                    <div class="single-brand">
+                        <a href="#"><img src="~/Content/img/brand/2.jpg" alt="brand-image"></a>
+                        <a href="#"><img src="~/Content/img/brand/3.jpg" alt="brand-image"></a>
+                        <a href="#"><img src="~/Content/img/brand/4.jpg" alt="brand-image"></a>
+                    </div>
+                    <div class="single-brand">
+                        <a href="#"><img src="~/Content/img/brand/2.jpg" alt="brand-image"></a>
+                        <a href="#"><img src="~/Content/img/brand/3.jpg" alt="brand-image"></a>
+                        <a href="#"><img src="~/Content/img/brand/4.jpg" alt="brand-image"></a>
+                    </div>
+                    <div class="single-brand">
+                        <a href="#"><img src="~/Content/img/brand/2.jpg" alt="brand-image"></a>
+                        <a href="#"><img src="~/Content/img/brand/3.jpg" alt="brand-image"></a>
+                        <a href="#"><img src="~/Content/img/brand/4.jpg" alt="brand-image"></a>
+                    </div>
+                    <div class="single-brand">
+                        <a href="#"><img src="~/Content/img/brand/2.jpg" alt="brand-image"></a>
+                        <a href="#"><img src="~/Content/img/brand/3.jpg" alt="brand-image"></a>
+                        <a href="#"><img src="~/Content/img/brand/4.jpg" alt="brand-image"></a>
+                    </div>
+                </div>
+                <!-- Brand Banner End -->
+
+            </div>
+            <div class="col-lg-3">
+                <div class="col-img">
+                    <img src="~/Content/img/banner/h1-band2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Brand Banner Area End Here -->
+<div class="big-banner pb-100 pb-sm-60">
+    <div class="container big-banner-box">
+        <div class="col-img">
+            <a href="#">
+                <img src="~/Content/img/banner/5.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-img">
+            <a href="#">
+                <img src="~/Content/img/banner/h1-banner3.jpg" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- Container End -->
+</div>

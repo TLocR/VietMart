@@ -1,0 +1,194 @@
+﻿@model IEnumerable<VietMark.Models.CartItem>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+}
+
+<script type="text/javascript">
+    function PlusToAdd(item) {
+        var masanpham = $(item).attr("masanpham");
+        $.ajax({
+            type: "post",
+            data: JSON.stringify({ masp: masanpham }),
+            contentType: "application/json; charset=utf-8",
+            url: '/ShoppingCart/Plus',
+            success: function () {
+                location.reload(true);
+            },
+            error: function () {
+                alert("Loi roi");
+            }
+        })
+    }
+    function MinusToAdd(item) {
+        var masanpham = $(item).attr("masanpham");
+        $.ajax({
+            type: "post",
+            data: JSON.stringify({ masp: masanpham }),
+            contentType: "application/json; charset=utf-8",
+            url: '/ShoppingCart/Minus',
+            success: function () {
+                location.reload(true);
+            },
+            error: function () {
+                alert("Loi roi");
+            }
+        })
+    }
+    function removeItem(item) {
+        var masanpham = $(item).attr("masanpham");
+        $.ajax({
+            type: "post",
+            data: JSON.stringify({ masp: masanpham }),
+            contentType: "application/json; charset=utf-8",
+            url: '/ShoppingCart/RemoveCartItem',
+            success: function () {
+                location.reload(true);
+            },
+            error: function () {
+                alert("Loi roi");
+            }
+        })
+    }
+</script>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xl-3 col-lg-4 d-none d-lg-block">
+            <div class="vertical-menu mb-all-30">
+                <nav>
+                    <ul style="display: none" class="vertical-menu-list">
+                        <li>
+                            <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "tat-ca-san-pham", cat_id = 0})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Tất cả sản phẩm</a>
+                        </li>
+                        <li class="">
+                            <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "san-pham-nam", cat_id = 1})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Đồ nam<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            <ul class="ht-dropdown mega-child">
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "phu-kien-nam", cat_id = 4})">Phụ kiện</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "phu-kien-nam", cat_id = 1})">Quần/Áo</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "giay-dep-nam", cat_id = 6})">Giày/Dép</a>
+                                </li>
+                            </ul>
+                            <!-- category submenu end-->
+                        </li>
+                        <li class="">
+                            <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "san-pham-nu", cat_id = 2})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Đồ nữ<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+
+                            <ul class="ht-dropdown mega-child">
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "phu-kien-nu", cat_id = 5})">Phụ kiện</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "phu-kien-nu", cat_id = 2})">Quần/Áo</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "giay-dep-nu", cat_id = 7})">Giày/Dép</a>
+                                </li>
+                            </ul>
+                            <!-- category submenu end-->
+                        </li>
+                        <li class="">
+                            <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "san-pham-tre-em", cat_id = 3})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Đồ trẻ em<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+
+                            <ul class="ht-dropdown mega-child">
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "quan-ao-tre-em", cat_id = 3})">Quần/Áo</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "giay-dep-tre-em", cat_id = 8})">Giày/Dép</a>
+                                </li>
+                            </ul>
+                            <!-- category submenu end-->
+                        </li>
+                        <!-- More Categoies Start -->
+                        <li id="cate-toggle" class="category-menu v-cat-menu">
+                            <ul>
+                                <li class="has-sub">
+                                    <a href="#">Xem thêm</a>
+                                    <ul class="category-sub">
+                                        <li><a href="#"><span><img src="~/Content/img/vertical-menu/11.png" alt="menu-icon"></span>Sản phẩm bán chạy</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- More Categoies End -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+
+    <section id="cart">
+       
+        @foreach (var item in Model)
+        {
+
+            <article class="product">
+                <header>
+                    <a class="remove">
+                        <img src="@item.Image" alt="">
+
+                        <button style="color: #fff; text-align: center; border: none" class="remove-item" masanpham="@item.MaSP" onclick="removeItem(this)">Xóa sản phẩm</button>
+
+                    </a>
+                </header>
+
+                <div class="content">
+
+                    <h1>@item.TenSP</h1>
+                    Hàng chất lượng cao
+
+                </div>
+
+                <footer style="position: relative" class="content">
+                    @using (Html.BeginForm("UpdateCart", "ShoppingCart", new { masp = item.MaSP }))
+                    {
+
+                        @*<a href="@Url.Action("UpdateCartMinus", new { MaSP = item.MaSP })" class="qt-minus">-</a>*@
+                        <input type="button" name="MinusAdd" class="qt-plus" masanpham="@item.MaSP" id="btnMinusAdd" onclick="MinusToAdd(this)" value="-" />
+                        <span class="qt">@item.Quantity</span>
+                        @*<a href="@Url.Action("UpdateCartPlus", new { MaSP = item.MaSP })" class="qt-plus">+</a>*@
+                        <input type="button" name="PlusAdd" class="qt-plus" masanpham="@item.MaSP" id="btnPlusAdd" onclick="PlusToAdd(this)" value="+" />
+                        @*<p style="padding-top: 12px; font-size: 16px;"></p>*@
+                        <h2 style="position: absolute; top: -6px; right: 0px; padding: 3px 26px;" class="full-price">
+                            @String.Format(info, "{0:c0}", item.Money)
+                        </h2>
+                    }
+
+                </footer>
+            </article>
+        }
+
+
+
+    </section>
+    <footer id="site-footer">
+        <div class="container clearfix">
+            <div class="left">
+                <a href="@Url.Action("Index", "Home")" class="btn">Tiếp tục mua hàng</a>
+            </div>
+            <div class="left pl-10">
+                <a href="@Url.Action("Delete")" class="btn">Xóa tất cả sản phẩm</a>
+            </div>
+            <div class="right">
+                <h1 class="total">Tổng tiền: @String.Format(info, "{0:c0}", ViewBag.Tongtien)</h1>
+                <a style="display: block; padding: 14px 26px" href="@Url.Action("ThanhToan")" class="btn">Hoàn tất đơn hàng</a>
+            </div>
+
+        </div>
+    </footer>
+</div>
+
+
+
+
+
+

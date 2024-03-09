@@ -1,0 +1,309 @@
+﻿@{
+    ViewBag.Title = "Blog";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-xl-3 col-lg-4 d-none d-lg-block">
+            <div class="vertical-menu mb-all-30">
+                <nav>
+                    <ul style="display: none" class="vertical-menu-list">
+                        <li>
+                            <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "tat-ca-san-pham", cat_id = 0})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Tất cả sản phẩm</a>
+                        </li>
+                        <li class="">
+                            <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "san-pham-nam", cat_id = 1})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Đồ nam<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            <ul class="ht-dropdown mega-child">
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "phu-kien-nam", cat_id = 4})">Phụ kiện</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "phu-kien-nam", cat_id = 1})">Quần/Áo</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "giay-dep-nam", cat_id = 6})">Giày/Dép</a>
+                                </li>
+                            </ul>
+                            <!-- category submenu end-->
+                        </li>
+                        <li class="">
+                            <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "san-pham-nu", cat_id = 2})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Đồ nữ<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+
+                            <ul class="ht-dropdown mega-child">
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "phu-kien-nu", cat_id = 5})">Phụ kiện</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "phu-kien-nu", cat_id = 2})">Quần/Áo</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "giay-dep-nu", cat_id = 7})">Giày/Dép</a>
+                                </li>
+                            </ul>
+                            <!-- category submenu end-->
+                        </li>
+                        <li class="">
+                            <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "san-pham-tre-em", cat_id = 3})"><span><img src="~/Content/img/vertical-menu/1.png" alt="menu-icon"></span>Đồ trẻ em<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+
+                            <ul class="ht-dropdown mega-child">
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "quan-ao-tre-em", cat_id = 3})">Quần/Áo</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("list_product_by_cat_id", "Home", new {metatitle = "giay-dep-tre-em", cat_id = 8})">Giày/Dép</a>
+                                </li>
+                            </ul>
+                            <!-- category submenu end-->
+                        </li>
+                        <!-- More Categoies Start -->
+                        <li id="cate-toggle" class="category-menu v-cat-menu">
+                            <ul>
+                                <li class="has-sub">
+                                    <a href="#">Xem thêm</a>
+                                    <ul class="category-sub">
+                                        <li><a href="#"><span><img src="~/Content/img/vertical-menu/11.png" alt="menu-icon"></span>Sản phẩm bán chạy</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- More Categoies End -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb Start -->
+<div class="breadcrumb-area mt-30">
+    <div class="container">
+        <div class="breadcrumb">
+            <ul class="d-flex align-items-center">
+                <li><a href="@Url.Action("Index", "Home")">Trang chủ</a></li>
+                <li class="active"><a href="blog">Bài viết</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Breadcrumb End -->
+<!-- Blog Page Start Here -->
+<div class="blog ptb-100  ptb-sm-60">
+    <div class="container">
+        <div class="main-blog">
+            <div class="row">
+                <!-- Single Blog Start -->
+                <div class="col-lg-6 col-sm-12">
+                    <div class="single-latest-blog">
+                        <div class="blog-img">
+                            <a href="single-blog.html"><img src="~/Content/img/blog/3.jpg" alt="blog-image"></a>
+                        </div>
+                        <div class="blog-desc">
+                            <h4><a href="single-blog.html">Tại Viet Mart</a></h4>
+                            <ul class="meta-box d-flex">
+                                <li><a href="#">By Viet Mart</a></li>
+                            </ul>
+                            <p>
+                                Bỏ ngoài tai những lời đường mật
+                                Chỉ quần áo đang sale mới là sức hút thật với em.
+                            </p>
+                            <a class="readmore" href="#">Read More</a>
+                        </div>
+                        <div class="blog-date">
+                            <span>28</span>
+                            June
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Blog End -->
+                <!-- Single Blog Start -->
+                <div class="col-lg-6 col-sm-12">
+                    <div class="single-latest-blog">
+                        <div class="blog-img">
+                            <a href="single-blog.html"><img src="~/Content/img/blog/4.jpg" alt="blog-image"></a>
+                        </div>
+                        <div class="blog-desc">
+                            <h4><a href="single-blog.html">Tại Viet Mart.</a></h4>
+                            <ul class="meta-box d-flex">
+                                <li><a href="#">By VietMart</a></li>
+                            </ul>
+                            <p>
+                                Sáng nay trời mát lạnh, thì ra thu đã về
+                                Hoa sữa cận kề, nàng đã có áo quần mới chưa?
+                            </p>
+                            <a class="readmore" href="#">Đọc Thêm</a>
+                        </div>
+                        <div class="blog-date">
+                            <span>26</span>
+                            Oct
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Blog End -->
+                <!-- Single Blog Start -->
+                <div class="col-lg-6 col-sm-12">
+                    <div class="single-latest-blog">
+                        <div class="blog-img">
+                            <a href="single-blog.html"><img src="~/Content/img/blog/5.jpg" alt="blog-image"></a>
+                        </div>
+                        <div class="blog-desc">
+                            <h4><a href="single-blog.html">Tại Viet Mart.</a></h4>
+                            <ul class="meta-box d-flex">
+                                <li><a href="#">By VietMart</a></li>
+                            </ul>
+                            <p>
+                                Sáng nay trời mát lạnh, thì ra thu đã về
+                                Hoa sữa cận kề, nàng đã có áo quần mới chưa?
+                            </p>
+                            <a class="readmore" href="#">Đọc Thêm</a>
+                        </div>
+                        <div class="blog-date">
+                            <span>18</span>
+                            Jan
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Blog End -->
+                <!-- Single Blog Start -->
+                <div class="col-lg-6 col-sm-12">
+                    <div class="single-latest-blog">
+                        <div class="blog-img">
+                            <a href="single-blog.html"><img src="~/Content/img/blog/6.jpg" alt="blog-image"></a>
+                        </div>
+                        <div class="blog-desc">
+                            <h4><a href="single-blog.html">Tại Viet Mart.</a></h4>
+                            <ul class="meta-box d-flex">
+                                <li><a href="#">By VietMart</a></li>
+                            </ul>
+                            <p>
+                                Sáng nay trời mát lạnh, thì ra thu đã về
+                                Hoa sữa cận kề, nàng đã có áo quần mới chưa?
+                            </p>
+                            <a class="readmore" href="#">Đọc Thêm</a>
+                        </div>
+                        <div class="blog-date">
+                            <span>21</span>
+                            Feb
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Blog End -->
+                <!-- Single Blog Start -->
+                <div class="col-lg-6 col-sm-12">
+                    <div class="single-latest-blog">
+                        <div class="blog-img">
+                            <a href="single-blog.html"><img src="~/Content/img/blog/7.jpg" alt="blog-image"></a>
+                        </div>
+                        <div class="blog-desc">
+                            <h4><a href="single-blog.html">Tại Viet Mart.</a></h4>
+                            <ul class="meta-box d-flex">
+                                <li><a href="#">By VietMart</a></li>
+                            </ul>
+                            <p>
+                                Sáng nay trời mát lạnh, thì ra thu đã về
+                                Hoa sữa cận kề, nàng đã có áo quần mới chưa?
+                            </p>
+                            <a class="readmore" href="#">Đọc Thêm</a>
+                        </div>
+                        <div class="blog-date">
+                            <span>19</span>
+                            Sep
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Blog End -->
+                <!-- Single Blog Start -->
+                <div class="col-lg-6 col-sm-12">
+                    <div class="single-latest-blog">
+                        <div class="blog-img">
+                            <a href="single-blog.html"><img src="~/Content/img/blog/8.jpg" alt="blog-image"></a>
+                        </div>
+                        <div class="blog-desc">
+                            <h4><a href="single-blog.html">Tại Viet Mart.</a></h4>
+                            <ul class="meta-box d-flex">
+                                <li><a href="#">By VietMart</a></li>
+                            </ul>
+                            <p>
+                                Sáng nay trời mát lạnh, thì ra thu đã về
+                                Hoa sữa cận kề, nàng đã có áo quần mới chưa?
+                            </p>
+                            <a class="readmore" href="#">Đọc Thêm</a>
+                        </div>
+                        <div class="blog-date">
+                            <span>28</span>
+                            June
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Blog End -->
+                <!-- Single Blog Start -->
+                <div class="col-lg-6 col-sm-12">
+                    <div class="single-latest-blog">
+                        <div class="blog-img">
+                            <a href="single-blog.html"><img src="~/Content/img/blog/9.jpg" alt="blog-image"></a>
+                        </div>
+                        <div class="blog-desc">
+                            <h4><a href="single-blog.html">Tại Viet Mart.</a></h4>
+                            <ul class="meta-box d-flex">
+                                <li><a href="#">By VietMart</a></li>
+                            </ul>
+                            <p>
+                                Sáng nay trời mát lạnh, thì ra thu đã về
+                                Hoa sữa cận kề, nàng đã có áo quần mới chưa?
+                            </p>
+                            <a class="readmore" href="#">Đọc Thêm</a>
+                        </div>
+                        <div class="blog-date">
+                            <span>25</span>
+                            Mar
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Blog End -->
+                <!-- Single Blog Start -->
+                <div class="col-lg-6 col-sm-12">
+                    <div class="single-latest-blog">
+                        <div class="blog-img">
+                            <a href="single-blog.html"><img src="~/Content/img/blog/11.jpg" alt="blog-image"></a>
+                        </div>
+                        <div class="blog-desc">
+                            <h4><a href="single-blog.html">Tại Viet Mart.</a></h4>
+                            <ul class="meta-box d-flex">
+                                <li><a href="#">By VietMart</a></li>
+                            </ul>
+                            <p>
+                                Sáng nay trời mát lạnh, thì ra thu đã về
+                                Hoa sữa cận kề, nàng đã có áo quần mới chưa?
+                            </p>
+                            <a class="readmore" href="#">Đọc Thêm</a>
+                        </div>
+                        <div class="blog-date">
+                            <span>14</span>
+                            Aug
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Blog End -->
+            </div>
+            <!-- Row End -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="pro-pagination">
+                        <ul class="blog-pagination">
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                        </ul>
+                        <div class="product-pagination">
+                            <span class="grid-item-list">Showing 1 to 12 of 51 (5 Pages)</span>
+                        </div>
+                    </div>
+                    <!-- Product Pagination Info -->
+                </div>
+            </div>
+            <!-- Row End -->
+        </div>
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Blog Page End Here -->

@@ -1,0 +1,88 @@
+﻿@model VietMark.Models.DonDatHang
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/_OwnerStoreLayout.cshtml";
+}
+
+<h2>Nhấn xác nhận xóa để xóa đơn hàng</h2>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Tên cửa hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CuaHang.Ten_CuaHang)
+        </dd>
+
+        <dt>
+            Tên khách hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KhachHang.TenKh)
+        </dd>
+
+        <dt>
+            Ngày đặt hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayDatHang)
+        </dd>
+
+        <dt>
+            Ngày giao hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayGiaoHang)
+        </dd>
+
+        <dt>
+            Địa chỉ giao hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaChiGiaoHang)
+        </dd>
+
+        <dt>
+            Phí giao hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhiGiaoHang)
+        </dd>
+
+        <dt>
+            Ngày thanh toán
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayThanhToan)
+        </dd>
+
+        <dt>
+            Tình trạng đơn hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TinhTrangDonDatHang)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xác nhận xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Quay lại", "Index")
+        </div>
+    }
+</div>

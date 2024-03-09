@@ -1,0 +1,83 @@
+﻿@model VietMark.Models.DonDatHang
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/_OwnerStoreLayout.cshtml";
+}
+
+<h2>Thông tin đơn</h2>
+
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        @*<dt>
+            @Html.DisplayNameFor(model => model.CuaHang.Ten_CuaHang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CuaHang.Ten_CuaHang)
+        </dd>*@
+
+        <dt>
+            Tên khách hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KhachHang.TenKh)
+        </dd>
+
+        <dt>
+            Ngày đặt hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayDatHang)
+        </dd>
+
+        <dt>
+            Ngày giao hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayGiaoHang)
+        </dd>
+
+        <dt>
+            Địa chỉ giao hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaChiGiaoHang)
+        </dd>
+
+        <dt>
+            Phí giao hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhiGiaoHang)
+        </dd>
+
+        <dt>
+            Ngày thanh toán
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayThanhToan)
+        </dd>
+
+        <dt>
+            Tình trạng đơn hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TinhTrangDonDatHang)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { id = Model.Id_DonDatHang }) |*@
+    @Html.ActionLink("Quay lại", "Index")
+</p>
